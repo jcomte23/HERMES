@@ -68,7 +68,7 @@
             </a>
             <h2 class="text-center">{{ config('app.name', 'Laravel') }}</h2>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lang">
-                Lang
+                {{ __('Lang') }}
             </button>
         </div>
     </header>
@@ -78,29 +78,25 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="row ">
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'zh_CN') }}" class="d-flex flex-column align-items-center"><img src="img/flags/cn.svg" alt="chino" width="50">China</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'es') }}" class="d-flex flex-column align-items-center"><img src="img/flags/es.svg" alt="español" width="50">español</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'en') }}" class="d-flex flex-column align-items-center"><img src="img/flags/us.svg" alt="ingles" width="50">EEUU</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'pt_BR') }}" class="d-flex flex-column align-items-center"><img src="img/flags/br.svg" alt="portugues" width="50">BRASIL</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'fr') }}" class="d-flex flex-column align-items-center"><img src="img/flags/fr.svg" alt="frances" width="50">frances</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'it') }}" class="d-flex flex-column align-items-center"><img src="img/flags/it.svg" alt="italiano" width="50">italiano</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ru') }}" class="d-flex flex-column align-items-center"><img src="img/flags/ru.svg" alt="ruso" width="50">Russo</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'hi') }}" class="d-flex flex-column align-items-center"><img src="img/flags/in.svg" alt="hindi" width="50">Hindi</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ar') }}" class="d-flex flex-column align-items-center"><img src="img/flags/qa.svg" alt="qatar" width="50">Arabe</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ja') }}" class="d-flex flex-column align-items-center"><img src="img/flags/jp.svg" alt="japan" width="50">Japon</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ko') }}" class="d-flex flex-column align-items-center"><img src="img/flags/kr.svg" alt="korea" width="50">Koreano</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'sv') }}" class="d-flex flex-column align-items-center"><img src="img/flags/se.svg" alt="korea" width="50">Suecia</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'zh_CN') }}" class="d-flex flex-column align-items-center"><img src="img/flags/cn.svg" alt="China" width="50">{{ __('Chinese') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'es') }}" class="d-flex flex-column align-items-center"><img src="img/flags/es.svg" alt="España" width="50">{{ __('Spanish') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'en') }}" class="d-flex flex-column align-items-center"><img src="img/flags/us.svg" alt="EEUU" width="50">{{ __('English') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'pt_BR') }}" class="d-flex flex-column align-items-center"><img src="img/flags/br.svg" alt="Brasil" width="50">{{ __('Portuguese') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'fr') }}" class="d-flex flex-column align-items-center"><img src="img/flags/fr.svg" alt="Frances" width="50">{{ __('French') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'it') }}" class="d-flex flex-column align-items-center"><img src="img/flags/it.svg" alt="Italia" width="50">{{ __('Italian') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ru') }}" class="d-flex flex-column align-items-center"><img src="img/flags/ru.svg" alt="Rusia" width="50">{{ __('Russian') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'hi') }}" class="d-flex flex-column align-items-center"><img src="img/flags/in.svg" alt="Hindia" width="50">{{ __('Hindi') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ar') }}" class="d-flex flex-column align-items-center"><img src="img/flags/qa.svg" alt="Qatar" width="50">{{ __('Arabic') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ja') }}" class="d-flex flex-column align-items-center"><img src="img/flags/jp.svg" alt="Japon" width="50">{{ __('Japanese') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ko') }}" class="d-flex flex-column align-items-center"><img src="img/flags/kr.svg" alt="Korea" width="50">{{ __('Korean') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'sv') }}" class="d-flex flex-column align-items-center"><img src="img/flags/se.svg" alt="Suecia" width="50">{{ __('Swedish') }}</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <h1>{{ __('Hello!') }}</h1>
-
-
-
-    {{-- <div class="column-row mt-4">
+    <div class="column-row mt-4">
         <?php if (isset($_POST["status"])) : ?>
         <?php if ($_POST["status"] == 'danger') : ?>
         <div class="col-lg-4 mx-auto alert alert-danger text-center" role="alert">
@@ -114,9 +110,6 @@
         </div>
         <?php endif; ?>
         <?php endif; ?>
-
-        <h1>{{ __('Hello!') }}</h1>
-
         <form action="./server.php" method="post" class="mt-2">
             <div class="column-row">
                 <div class="col-lg-3 mx-auto">
@@ -146,8 +139,10 @@
             </div>
     </div>
     </form>
-    <br> --}}
-    {{-- <footer class="bg-dark  mt-auto text-center text-white ">
+
+    <br>
+
+    <footer class="bg-dark  mt-auto text-center text-white ">
         <div class="container p-4 pb-0">
             <section class="">
                 <!-- linkedin -->
@@ -186,7 +181,7 @@
             <a class="text-white text-decoration-none" href="https://github.com/jcomte23">Jcomte23</a>
         </div>
         <!-- Copyright -->
-    </footer> --}}
+    </footer>
 </body>
 
 </html>
