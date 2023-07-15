@@ -57,6 +57,7 @@
 </head>
 
 <body>
+    
     <header class="p-3 bg-dark text-white">
         <div class="">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
@@ -74,8 +75,18 @@
         </div>
     </header>
 
-    <a href="{{route('lang',"es")}}">español</a>
-    <a href="{{route('lang',"en")}}">ingles</a>
+    <a href="{{route('lang',"en")}}"><img src="img/flags/cn.svg" alt="chino" width="50"></a>
+    <a href="{{route('lang',"es")}}"><img src="img/flags/es.svg" alt="español" width="50"></a>
+    <a href="{{route('lang',"en")}}"><img src="img/flags/us.svg" alt="ingles" width="50"></a>
+    <a href="{{route('lang',"en")}}"><img src="img/flags/br.svg" alt="portugues" width="50"></a>
+    <a href="{{route('lang',"en")}}"><img src="img/flags/fr.svg" alt="frances" width="50"></a>
+    <a href="{{route('lang',"en")}}"><img src="img/flags/it.svg" alt="italiano" width="50"></a>
+    <a href="{{route('lang',"en")}}"><img src="img/flags/ru.svg" alt="italiano" width="50"></a>
+    <a href="{{route('lang',"en")}}"><img src="img/flags/in.svg" alt="hindi" width="50"></a>
+    <a href="{{route('lang',"en")}}"><img src="img/flags/qa.svg" alt="qatar" width="50"></a>
+    <a href="{{route('lang',"en")}}"><img src="img/flags/jp.svg" alt="japan" width="50"></a>
+    <a href="{{route('lang',"en")}}"><img src="img/flags/kr.svg" alt="korea" width="50"></a>
+
 
     <div class="column-row mt-4">
         <?php if (isset($_POST["status"])) : ?>
