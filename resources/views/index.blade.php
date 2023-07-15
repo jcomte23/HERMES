@@ -75,17 +75,17 @@
         </div>
     </header>
 
-    <a href="{{route('lang',"en")}}"><img src="img/flags/cn.svg" alt="chino" width="50"></a>
+    <a href="{{route('lang',"zh_CN")}}"><img src="img/flags/cn.svg" alt="chino" width="50"></a>
     <a href="{{route('lang',"es")}}"><img src="img/flags/es.svg" alt="español" width="50"></a>
     <a href="{{route('lang',"en")}}"><img src="img/flags/us.svg" alt="ingles" width="50"></a>
-    <a href="{{route('lang',"en")}}"><img src="img/flags/br.svg" alt="portugues" width="50"></a>
-    <a href="{{route('lang',"en")}}"><img src="img/flags/fr.svg" alt="frances" width="50"></a>
-    <a href="{{route('lang',"en")}}"><img src="img/flags/it.svg" alt="italiano" width="50"></a>
-    <a href="{{route('lang',"en")}}"><img src="img/flags/ru.svg" alt="italiano" width="50"></a>
-    <a href="{{route('lang',"en")}}"><img src="img/flags/in.svg" alt="hindi" width="50"></a>
-    <a href="{{route('lang',"en")}}"><img src="img/flags/qa.svg" alt="qatar" width="50"></a>
-    <a href="{{route('lang',"en")}}"><img src="img/flags/jp.svg" alt="japan" width="50"></a>
-    <a href="{{route('lang',"en")}}"><img src="img/flags/kr.svg" alt="korea" width="50"></a>
+    <a href="{{route('lang',"pt_BR")}}"><img src="img/flags/br.svg" alt="portugues" width="50"></a>
+    <a href="{{route('lang',"fr")}}"><img src="img/flags/fr.svg" alt="frances" width="50"></a>
+    <a href="{{route('lang',"it")}}"><img src="img/flags/it.svg" alt="italiano" width="50"></a>
+    <a href="{{route('lang',"ru")}}"><img src="img/flags/ru.svg" alt="ruso" width="50"></a>
+    <a href="{{route('lang',"hi")}}"><img src="img/flags/in.svg" alt="hindi" width="50"></a>
+    <a href="{{route('lang',"ar")}}"><img src="img/flags/qa.svg" alt="qatar" width="50"></a>
+    <a href="{{route('lang',"ja")}}"><img src="img/flags/jp.svg" alt="japan" width="50"></a>
+    <a href="{{route('lang',"ko")}}"><img src="img/flags/kr.svg" alt="korea" width="50"></a>
 
 
     <div class="column-row mt-4">
@@ -102,6 +102,8 @@
         </div>
         <?php endif; ?>
         <?php endif; ?>
+
+        <h1>{{ __('Hello!') }}</h1>
 
         <form action="./server.php" method="post" class="mt-2">
             <div class="column-row">
