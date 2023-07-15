@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="PHP-based program to send e-mails to anyone in a reliable, intuitive and secure manner" />
-    <meta name="keywords" content=" Email sender,
+    <meta name="description"
+        content="PHP-based program to send e-mails to anyone in a reliable, intuitive and secure manner" />
+    <meta name="keywords"
+        content=" Email sender,
     Personal server,
     Emails,
     Sending application,
@@ -57,38 +59,48 @@
 </head>
 
 <body>
-    
+
     <header class="p-3 bg-dark text-white">
-        <div class="">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
-                <a href="https://javiercombita.com"
-                    class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none" target="_blank">
-                    <img src="img/logo.webp" width="60" alt="logo">
-                </a>
-                <h2 class="text-center">{{ config('app.name', 'Laravel') }}</h2>
-                <a href="https://javiercombita.com"
-                    class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none" target="_blank">
-                    <img src="img/logo.webp" width="60" alt="logo">
-                </a>
-                
-            </div>
+        <div class="d-flex flex-wrap align-items-center justify-content-between">
+            <a href="https://javiercombita.com"
+                class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none" target="_blank">
+                <img src="img/logo.webp" width="60" alt="logo">
+            </a>
+            <h2 class="text-center">{{ config('app.name', 'Laravel') }}</h2>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lang">
+                Lang
+            </button>
         </div>
     </header>
 
-    <a href="{{route('lang',"zh_CN")}}"><img src="img/flags/cn.svg" alt="chino" width="50"></a>
-    <a href="{{route('lang',"es")}}"><img src="img/flags/es.svg" alt="español" width="50"></a>
-    <a href="{{route('lang',"en")}}"><img src="img/flags/us.svg" alt="ingles" width="50"></a>
-    <a href="{{route('lang',"pt_BR")}}"><img src="img/flags/br.svg" alt="portugues" width="50"></a>
-    <a href="{{route('lang',"fr")}}"><img src="img/flags/fr.svg" alt="frances" width="50"></a>
-    <a href="{{route('lang',"it")}}"><img src="img/flags/it.svg" alt="italiano" width="50"></a>
-    <a href="{{route('lang',"ru")}}"><img src="img/flags/ru.svg" alt="ruso" width="50"></a>
-    <a href="{{route('lang',"hi")}}"><img src="img/flags/in.svg" alt="hindi" width="50"></a>
-    <a href="{{route('lang',"ar")}}"><img src="img/flags/qa.svg" alt="qatar" width="50"></a>
-    <a href="{{route('lang',"ja")}}"><img src="img/flags/jp.svg" alt="japan" width="50"></a>
-    <a href="{{route('lang',"ko")}}"><img src="img/flags/kr.svg" alt="korea" width="50"></a>
+    <div class="modal fade" id="lang" tabindex="-1" aria-labelledby="langLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row ">
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'zh_CN') }}" class="d-flex flex-column align-items-center"><img src="img/flags/cn.svg" alt="chino" width="50">China</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'es') }}" class="d-flex flex-column align-items-center"><img src="img/flags/es.svg" alt="español" width="50">español</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'en') }}" class="d-flex flex-column align-items-center"><img src="img/flags/us.svg" alt="ingles" width="50">EEUU</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'pt_BR') }}" class="d-flex flex-column align-items-center"><img src="img/flags/br.svg" alt="portugues" width="50">BRASIL</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'fr') }}" class="d-flex flex-column align-items-center"><img src="img/flags/fr.svg" alt="frances" width="50">frances</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'it') }}" class="d-flex flex-column align-items-center"><img src="img/flags/it.svg" alt="italiano" width="50">italiano</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ru') }}" class="d-flex flex-column align-items-center"><img src="img/flags/ru.svg" alt="ruso" width="50">Russo</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'hi') }}" class="d-flex flex-column align-items-center"><img src="img/flags/in.svg" alt="hindi" width="50">Hindi</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ar') }}" class="d-flex flex-column align-items-center"><img src="img/flags/qa.svg" alt="qatar" width="50">Arabe</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ja') }}" class="d-flex flex-column align-items-center"><img src="img/flags/jp.svg" alt="japan" width="50">Japon</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ko') }}" class="d-flex flex-column align-items-center"><img src="img/flags/kr.svg" alt="korea" width="50">Koreano</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'sv') }}" class="d-flex flex-column align-items-center"><img src="img/flags/se.svg" alt="korea" width="50">Suecia</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>{{ __('Hello!') }}</h1>
 
 
-    <div class="column-row mt-4">
+
+    {{-- <div class="column-row mt-4">
         <?php if (isset($_POST["status"])) : ?>
         <?php if ($_POST["status"] == 'danger') : ?>
         <div class="col-lg-4 mx-auto alert alert-danger text-center" role="alert">
@@ -134,8 +146,8 @@
             </div>
     </div>
     </form>
-    <br>
-    <footer class="bg-dark  mt-auto text-center text-white ">
+    <br> --}}
+    {{-- <footer class="bg-dark  mt-auto text-center text-white ">
         <div class="container p-4 pb-0">
             <section class="">
                 <!-- linkedin -->
@@ -174,6 +186,7 @@
             <a class="text-white text-decoration-none" href="https://github.com/jcomte23">Jcomte23</a>
         </div>
         <!-- Copyright -->
-    </footer>
+    </footer> --}}
 </body>
+
 </html>
