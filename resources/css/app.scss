@@ -1,4 +1,10 @@
-a{
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.country{
     text-decoration: none !important;
     color: black !important;
 }

@@ -78,18 +78,18 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="row ">
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'zh_CN') }}" class="d-flex flex-column align-items-center"><img src="img/flags/cn.svg" alt="China" width="50">{{ __('Chinese') }}</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'es') }}" class="d-flex flex-column align-items-center"><img src="img/flags/es.svg" alt="España" width="50">{{ __('Spanish') }}</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'en') }}" class="d-flex flex-column align-items-center"><img src="img/flags/us.svg" alt="EEUU" width="50">{{ __('English') }}</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'pt_BR') }}" class="d-flex flex-column align-items-center"><img src="img/flags/br.svg" alt="Brasil" width="50">{{ __('Portuguese') }}</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'fr') }}" class="d-flex flex-column align-items-center"><img src="img/flags/fr.svg" alt="Frances" width="50">{{ __('French') }}</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'it') }}" class="d-flex flex-column align-items-center"><img src="img/flags/it.svg" alt="Italia" width="50">{{ __('Italian') }}</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ru') }}" class="d-flex flex-column align-items-center"><img src="img/flags/ru.svg" alt="Rusia" width="50">{{ __('Russian') }}</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'hi') }}" class="d-flex flex-column align-items-center"><img src="img/flags/in.svg" alt="Hindia" width="50">{{ __('Hindi') }}</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ar') }}" class="d-flex flex-column align-items-center"><img src="img/flags/qa.svg" alt="Qatar" width="50">{{ __('Arabic') }}</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ja') }}" class="d-flex flex-column align-items-center"><img src="img/flags/jp.svg" alt="Japon" width="50">{{ __('Japanese') }}</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ko') }}" class="d-flex flex-column align-items-center"><img src="img/flags/kr.svg" alt="Korea" width="50">{{ __('Korean') }}</a></div>
-                        <div class="col-6 mb-3"><a href="{{ route('lang', 'sv') }}" class="d-flex flex-column align-items-center"><img src="img/flags/se.svg" alt="Suecia" width="50">{{ __('Swedish') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'zh_CN') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/cn.svg" alt="China" width="50">{{ __('Chinese') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'es') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/es.svg" alt="España" width="50">{{ __('Spanish') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'en') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/us.svg" alt="EEUU" width="50">{{ __('English') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'pt_BR') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/br.svg" alt="Brasil" width="50">{{ __('Portuguese') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'fr') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/fr.svg" alt="Frances" width="50">{{ __('French') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'it') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/it.svg" alt="Italia" width="50">{{ __('Italian') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ru') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/ru.svg" alt="Rusia" width="50">{{ __('Russian') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'hi') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/in.svg" alt="Hindia" width="50">{{ __('Hindi') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ar') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/qa.svg" alt="Qatar" width="50">{{ __('Arabic') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ja') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/jp.svg" alt="Japon" width="50">{{ __('Japanese') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'ko') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/kr.svg" alt="Korea" width="50">{{ __('Korean') }}</a></div>
+                        <div class="col-6 mb-3"><a href="{{ route('lang', 'sv') }}" class="country d-flex flex-column align-items-center"><img src="img/flags/se.svg" alt="Suecia" width="50">{{ __('Swedish') }}</a></div>
                     </div>
                 </div>
             </div>
@@ -111,23 +111,23 @@
         <?php endif; ?>
         <?php endif; ?>
         <form action="./server.php" method="post" class="mt-2">
-            <div class="column-row">
-                <div class="col-lg-3 mx-auto">
+            <div class="column-row px-4">
+                <div class="col-lg-10 mx-auto">
                     <label for="name" class="form-label">{{ __('Name') }}</label>
                     <input type="text" class="form-control" required name="name" id="Name" autocomplete="off"
                         placeholder="{{ __('Your name') }}">
                 </div>
-                <div class="col-lg-3 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <label for="email" class="form-label">{{ __('Email') }}</label>
                     <input type="email" class="form-control" required name="email" id="Email" autocomplete="off"
                         placeholder="{{ __('Destination Email') }}">
                 </div>
-                <div class="col-lg-3 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <label for="subject" class="form-label">{{ __('Subject of the email') }}</label>
                     <input type="text" class="form-control" required name="subject" id="Subject" autocomplete="off"
                         placeholder="{{ __('The subject of your email') }}">
                 </div>
-                <div class="col-lg-3 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <label for="message" class="form-label">{{ __('Message of the email') }}</label>
                     <textarea class="form-control" required name="message" id="message" rows="5" autocomplete="off"
                         placeholder="{{ __('Message') }}"></textarea>
@@ -142,7 +142,7 @@
 
     <br>
 
-    <footer class="bg-dark  mt-auto text-center text-white ">
+    <footer class="bg-dark mt-auto text-center text-white ">
         <div class="container p-4 pb-0">
             <section class="">
                 <!-- linkedin -->
