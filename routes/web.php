@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GeneralController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/',[GeneralController::class,'index'])->name('index');
+Route::get("locale/{locale}",[GeneralController::class,'setLang'])->name('lang');

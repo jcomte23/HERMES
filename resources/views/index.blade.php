@@ -64,14 +64,18 @@
                     class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none" target="_blank">
                     <img src="img/logo.webp" width="60" alt="logo">
                 </a>
-                <h2 class="text-center">Mail Sender</h2>
+                <h2 class="text-center">{{ config('app.name', 'Laravel') }}</h2>
                 <a href="https://javiercombita.com"
                     class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none" target="_blank">
                     <img src="img/logo.webp" width="60" alt="logo">
                 </a>
+                
             </div>
         </div>
     </header>
+
+    <a href="{{route('lang',"es")}}">español</a>
+    <a href="{{route('lang',"en")}}">ingles</a>
 
     <div class="column-row mt-4">
         <?php if (isset($_POST["status"])) : ?>
@@ -91,29 +95,29 @@
         <form action="./server.php" method="post" class="mt-2">
             <div class="column-row">
                 <div class="col-lg-3 mx-auto">
-                    <label for="name" class="form-label">Name</label>
+                    <label for="name" class="form-label">{{ __('Name') }}</label>
                     <input type="text" class="form-control" required name="name" id="Name" autocomplete="off"
-                        placeholder="Your name">
+                        placeholder="{{ __('Your name') }}">
                 </div>
                 <div class="col-lg-3 mx-auto">
-                    <label for="email" class="form-label">Email</label>
+                    <label for="email" class="form-label">{{ __('Email') }}</label>
                     <input type="email" class="form-control" required name="email" id="Email" autocomplete="off"
-                        placeholder="Destination Email">
+                        placeholder="{{ __('Destination Email') }}">
                 </div>
                 <div class="col-lg-3 mx-auto">
-                    <label for="subject" class="form-label">Subject of the email</label>
+                    <label for="subject" class="form-label">{{ __('Subject of the email') }}</label>
                     <input type="text" class="form-control" required name="subject" id="Subject" autocomplete="off"
-                        placeholder="The subject of your email">
+                        placeholder="{{ __('The subject of your email') }}">
                 </div>
                 <div class="col-lg-3 mx-auto">
-                    <label for="message" class="form-label">Message of the email</label>
+                    <label for="message" class="form-label">{{ __('Message of the email') }}</label>
                     <textarea class="form-control" required name="message" id="message" rows="5" autocomplete="off"
-                        placeholder="Message"></textarea>
+                        placeholder="{{ __('Message') }}"></textarea>
                 </div>
             </div>
             <div class="text-center">
                 <br>
-                <button name="btnSend" class="btn btn-dark mx-auto" type="submit">Send</button>
+                <button name="btnSend" class="btn btn-dark mx-auto" type="submit">{{ __('Send') }}</button>
             </div>
     </div>
     </form>
@@ -158,7 +162,5 @@
         </div>
         <!-- Copyright -->
     </footer>
-
 </body>
-
 </html>
