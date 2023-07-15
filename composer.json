@@ -1,8 +1,37 @@
 {
-    "name": "laravel/laravel",
+    "name": "laravel/hermes",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "PHP-based program to send e-mails to anyone in a reliable, intuitive and secure manner",
+    "keywords": [
+      "Email sender",
+      "Personal server",
+      "Emails",
+      "Sending application",
+      "Email security",
+      "Intuitive user interface",
+      "Advanced configuration",
+      "Email attachments",
+      "Scheduled sending",
+      "Delivery notifications",
+      "Read receipts",
+      "Email encryption",
+      "Email authentication",
+      "Email contacts",
+      "Shipment tracking",
+      "Shipment logs",
+      "User experience",
+      "Electronic communications",
+      "Reliable sending",
+      "Full control"
+    ],
+    "authors": [
+      {
+        "name": "Javier Cómbita Téllez",
+        "email": "jcomte23@outlook.com",
+        "homepage": "https://javiercombita.com",
+        "role": "Lead Developer"
+      }
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.1",
