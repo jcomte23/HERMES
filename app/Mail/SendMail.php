@@ -14,13 +14,15 @@ class SendMail extends Mailable
     use Queueable, SerializesModels;
 
     public $messageEmail;
+    public $subject;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($mensaje)
+    public function __construct($message,$subject)
     {
-        $this->messageEmail=$mensaje;
+        $this->messageEmail=$message;
+        $this->subject=$subject;
     }
 
     /**
@@ -29,7 +31,7 @@ class SendMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Asunto del correo',
+            subject:  $this->subject,
         );
     }
 

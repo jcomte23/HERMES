@@ -59,7 +59,6 @@
 </head>
 
 <body>
-
     <header class="p-3 bg-dark text-white">
         <div class="d-flex flex-wrap align-items-center justify-content-between">
             <a href="https://javiercombita.com"
@@ -121,19 +120,12 @@
     </div>
 
     <div class="column-row mt-4">
-        <?php if (isset($_POST["status"])) : ?>
-        <?php if ($_POST["status"] == 'danger') : ?>
-        <div class="col-lg-4 mx-auto alert alert-danger text-center" role="alert">
-            Error,message not sent!
-        </div>
-        <?php endif; ?>
+        @if (session('status'))
+            <div class="col-lg-10 mx-auto alert alert-success text-center" role="alert">
+                {{ session('status') }}
+            </div>
+        @endif
 
-        <?php if ($_POST["status"] == 'success') : ?>
-        <div class="col-lg-4 mx-auto alert alert-success text-center" role="alert">
-            Message sent successfully!
-        </div>
-        <?php endif; ?>
-        <?php endif; ?>
         <form action="{{ route('setEmail') }}" method="post" class="mt-2">
             @csrf
             <div class="column-row px-4">
@@ -191,6 +183,7 @@
                 <button class="btn btn-dark mx-auto" type="submit">{{ __('Send') }}</button>
             </div>
         </form>
+
     </div>
 
 

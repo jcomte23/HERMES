@@ -22,7 +22,7 @@ class MailRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name'=>"required|alpha_num",
+            'name'=>"required",
             'destinationEmail'=>"required|email",
             'subject'=>"required",
             'message'=>"required"
