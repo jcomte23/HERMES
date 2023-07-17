@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\MailRequest;
 use App\Mail\SendMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -18,7 +19,7 @@ class GeneralController extends Controller
         return redirect()->back()->withCookie('locale', $locale);
     }
 
-    public function setEmail(Request $request)
+    public function setEmail(MailRequest $request)
     {
         Mail::to($request->destinationEmail)->send(new SendMail($request->message));
         return "correo enviado";
