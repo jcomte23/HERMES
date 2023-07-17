@@ -144,7 +144,7 @@
                 </div>
                 <div class="col-lg-10 mx-auto">
                     <label for="email" class="form-label">{{ __('Email') }}</label>
-                    <input type="email" class="form-control" required name="email" id="Email"
+                    <input type="email" class="form-control" required name="destinationEmail" id="destinationEmail"
                         autocomplete="off" placeholder="{{ __('Destination Email') }}">
                 </div>
                 <div class="col-lg-10 mx-auto">
@@ -160,7 +160,7 @@
             </div>
             <div class="text-center">
                 <br>
-                <button name="btnSend" class="btn btn-dark mx-auto" type="submit">{{ __('Send') }}</button>
+                <button class="btn btn-dark mx-auto" type="submit">{{ __('Send') }}</button>
             </div>
         </form>
     </div>

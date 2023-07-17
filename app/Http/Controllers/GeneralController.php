@@ -18,9 +18,9 @@ class GeneralController extends Controller
         return redirect()->back()->withCookie('locale', $locale);
     }
 
-    public function setEmail()
+    public function setEmail(Request $request)
     {
-        Mail::to('javiercombita2014@gmail.com')->send(new SendMail);
+        Mail::to($request->destinationEmail)->send(new SendMail($request->message));
         return "correo enviado";
     }
 
