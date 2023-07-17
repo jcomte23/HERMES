@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[GeneralController::class,'index'])->name('index');
 Route::get("locale/{locale}",[GeneralController::class,'setLang'])->name('lang');
+Route::post("email",[GeneralController::class,'setEmail'])->name('setEmail');

@@ -16,5 +16,10 @@ class GeneralController extends Controller
         return redirect()->back()->withCookie('locale', $locale);
     }
 
+    public function setEmail()
+    {
+        return "llego al controlador";
+    }
+
     
 }
