@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\SendMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class GeneralController extends Controller
 {
@@ -18,7 +20,8 @@ class GeneralController extends Controller
 
     public function setEmail()
     {
-        return "llego al controlador";
+        Mail::to('javiercombita2014@gmail.com')->send(new SendMail);
+        return "correo enviado";
     }
 
     
