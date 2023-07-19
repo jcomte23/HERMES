@@ -1,6 +1,6 @@
 <h1 align="center">HERMES</h1>
 
-<p align="center"><img src="https://i.imgur.com/ElG3RsT.png" width="100%" alt="logo"></p>
+<p align="center"><img src="https://i.imgur.com/ElG3RsT.png" width="80%" alt="logo"></p>
 
 
 <p align="center">PHP-based program to send e-mails to anyone in a reliable, intuitive and secure manner</p>
