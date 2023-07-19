@@ -30,6 +30,7 @@
     "The repository": "저장소",
     "spanEmailThree": "를 방문하셔서 '스타'를 클릭해 주세요.",
     "Sincerely": "진심으로",
+    "mailSent":"메일이 성공적으로 전송되었습니다!",
     "(and :count more error)": "(그리고 :count개 이상의 오류)",
     "(and :count more errors)": "(그리고 :count개 이상의 오류)",
     "All rights reserved.": "모든 권리 보유.",

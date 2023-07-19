@@ -30,6 +30,7 @@
     "The repository": "El repositorio",
     "spanEmailThree": "y haz clic en 'Estrella'.",
     "Sincerely": "Atentamente",
+    "mailSent":"¡Correo enviado exitosamente!",
 
     "(and :count more error)": "(y :count error más)",
     "(and :count more errors)": "(y :count errores más)",

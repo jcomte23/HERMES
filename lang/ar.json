@@ -30,6 +30,7 @@
     "The repository": "المستودع",
     "spanEmailThree": "واضغط على 'نجمة'.",
     "Sincerely": "مع خالص التحية",
+    "mailSent":"تم إرسال البريد بنجاح!",
 
     "(and :count more error)": "(و :count خطأ إضافي)",
     "(and :count more errors)": "(و :count أخطاء إضافية)",

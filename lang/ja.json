@@ -30,6 +30,7 @@
     "The repository": "リポジトリ",
     "spanEmailThree": "を訪れて、「スター」をクリックしてください。",
     "Sincerely": "敬具",
+    "mailSent":"メールが送信されました！成功しました！",
     "(and :count more error)": "(その他、:countエラーあり)",
     "(and :count more errors)": "(その他、:countエラーあり)",
     "All rights reserved.": "All rights reserved.",

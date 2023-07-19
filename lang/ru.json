@@ -30,6 +30,7 @@
     "The repository": "Репозиторий",
     "spanEmailThree": "и нажмите кнопку 'Звезда'.",
     "Sincerely": "С уважением",
+    "mailSent":"Письмо успешно отправлено!",
     "(and :count more error)": "(и ещё :count ошибка)",
     "(and :count more errors)": "(и ещё :count ошибок)",
     "All rights reserved.": "Все права защищены.",

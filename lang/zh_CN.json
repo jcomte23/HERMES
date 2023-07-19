@@ -30,6 +30,7 @@
     "The repository": "存储库",
     "spanEmailThree": "并点击“Star”。",
     "Sincerely": "谨此",
+    "mailSent":"邮件发送成功！",
 
     "(and :count more error)": "(还有 :count 个错误)",
     "(and :count more errors)": "(以及另外 :count 个错误)",

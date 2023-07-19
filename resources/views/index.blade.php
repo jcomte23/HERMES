@@ -122,7 +122,7 @@
     <div class="column-row mt-4">
         @if (session('status'))
             <div class="col-lg-10 mx-auto alert alert-success text-center" role="alert">
-                {{ session('status') }}
+                {{__('mailSent')}}
             </div>
         @endif
 
