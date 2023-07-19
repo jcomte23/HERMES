@@ -1,6 +1,6 @@
 <h1 align="center">HERMES</h1>
 
-<p align="center"><img src="https://i.imgur.com/ElG3RsT.png" width="200" alt="logo"></p>
+<p align="center"><img src="https://i.imgur.com/ElG3RsT.png" width="100%" alt="logo"></p>
 
 
 <p align="center">PHP-based program to send e-mails to anyone in a reliable, intuitive and secure manner</p>
@@ -43,4 +43,4 @@ If you have any questions or comments about the project, you can contact Javier 
 
 ## Project status
 
-This project is currently under active development and updates are expected to be released in the near future.
+This project is currently at version 1.0 and updates are expected to be released in the near future.
