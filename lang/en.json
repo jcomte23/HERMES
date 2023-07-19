@@ -22,6 +22,16 @@
     "Korean":"Korean",
     "Swedish":"Swedish",
 
+    "paragraphEmailOne":"Thank you for using my project on Github to send emails.This email was generated through a project created in the PHP programming language, which has the ONLY purpose of teaching how to send real emails from code.",
+    "nameEmail":"The mail was sent by",
+    "subjectEmail":"The subject of the message is",
+    "spanEmailOne":"The following is the content of the message",
+    "paragraphEmailTwo":"If you receive indiscriminate, offensive or too many emails from this service, do not hesitate to write me at emails from this service, do not hesitate to write me at jcomte23@outlook.com and I will gladly give you a solution. a solution.",
+    "spanEmailTwo":"If you are a programmer and you liked the project visit",
+    "The repository":"The repository",
+    "spanEmailThree":"and give me a click on 'Star'.",
+    "Sincerely":"Sincerely",
+
     "(and :count more error)": "(and :count more error)",
     "(and :count more errors)": "(and :count more errors)",
     "All rights reserved.": "All rights reserved.",

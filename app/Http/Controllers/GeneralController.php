@@ -21,7 +21,6 @@ class GeneralController extends Controller
 
     public function setEmail(MailRequest $request)
     {
-        // return view('mail/sendMail');
         Mail::to($request->destinationEmail)->send(new SendMail($request->name,$request->subject,$request->message));
         return redirect()->route('index')->with('status', "mail sent successfully!");
     }
